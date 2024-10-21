@@ -1,0 +1,23 @@
+<h1>create-Bank Accounts</h1>
+<form [formGroup]="bankaccountsForm">
+
+    <label for="">Account_Name</label>
+    <input type="text" formControlName="account_name">
+    <br>
+    <label for="">Available_Balance</label>
+    <input type="text" formControlName="available_balance">
+    <br>
+    <label for="">Account_Number</label>
+    <input type="text" formControlName="account_number">
+    <br>
+    <label for="">city</label>
+    <input type="text" formControlName="city">
+    <br>
+    <label for="">Profile_Picture</label>
+    <input type="text" formControlName="profile_picture">
+    <br>
+    <label for="">Id</label>
+    <input type="text" formControlName="id">
+    <br>
+    <button (click)="submit()">submit</button>
+</form>

@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+.parent{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.child1 {
+    width: 20%;
+    height: 100%;
+    background-color: grey;
+    text-align: center;
+    text-transform: capitalize;
+    flex-direction: column;
+    overflow: auto;
+    
+
+}
+
+.child2 {
+    width: 80%;
+    height: 100%;
+    background-color:darkslategrey;
+    text-transform: capitalize;
+    flex-direction: column;
+    overflow: auto;
+}
+
+button {
+    width: 50%;
+    height: 5%;
+    color: white;
+    background-color: brown;
+    font-size: large;
+    border-radius: 10px;
+    
+}

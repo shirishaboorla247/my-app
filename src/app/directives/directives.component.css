@@ -1,0 +1,28 @@
+.green{
+    background-color: greenyellow
+
+}
+.red{
+    background-color: red;
+    color: orange;
+}
+body{
+    background-color: #121212;
+    color: #ffff;
+    font-family: Arial, sans-serif;
+}
+thead{
+    background-color: #1f1f1f;
+}
+th,td{
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #333;
+}
+tbody tr:hover{
+    background-color: #444;
+}
+th{
+    color: #ffff;
+    font-weight: bold;
+}

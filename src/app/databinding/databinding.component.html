@@ -1,0 +1,16 @@
+<p>databinding works!</p>
+
+<!-- interpolation-->
+ <h1>My Age Is {{age}}</h1>
+ <h1>My Name Is {{name}}</h1>
+
+ <!--property binding-->
+ <button [disabled]="isInvalid">create</button>
+
+ <!--event binding-->
+ <button (click)="submit()">Submit</button>
+ <input type="text" (keyup)="typing()" >
+
+ <!--two way binding-->
+ <input type="text">
+

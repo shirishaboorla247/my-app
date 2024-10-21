@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+.parent{
+    height: 100vh;
+    width: 100vw;
+}
+.child1{
+    height: 20%;
+    width: 100%;
+    background-color:white;
+}
+.child2{
+    height: 80%;
+    width: 100%;
+    background-color: white;
+}

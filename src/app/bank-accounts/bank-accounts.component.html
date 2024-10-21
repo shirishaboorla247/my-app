@@ -1,0 +1,50 @@
+<h1>Bank Accounts</h1>
+<input type="text" [(ngModel)]="term" (keyup)="search()" placeholder="search">
+<label for="">column</label>
+<select [(ngModel)]="column">
+    <option>account_name</option>
+    <option>account_number</option>
+    <option>city</option>
+    <option>id</option>
+</select>
+
+<label for="">order</label>
+<select [(ngModel)]="order">
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+</select>
+
+<button (click)="sort()">sort</button>
+<label for="">page</label>
+<select [(ngModel)]="page" (change)="pagination()">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+<table border="3">
+    <thead>
+        <tr >
+            <th>Account_Name</th>
+            <th>Available_Balance</th>
+            <th>Account_Number</th>
+            <th>City</th>
+            <th>Profile_Picture</th>
+            <th>Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bankaccount of bankaccounts">
+            <td>{{bankaccount.account_name}}</td>
+            <td>{{bankaccount.available_balance}}</td>
+            <td>{{bankaccount.account_number}}</td>
+            <td>{{bankaccount.city}}</td>
+            <td>
+                <img src="{{bankaccount.profile_picture}}" alt="" width="100px">
+            </td>
+            <td>{{bankaccount.id}}</td>
+            <button (click)="delete(bankaccount.id)">Delete</button>
+        </tr>
+    </tbody>
+</table>

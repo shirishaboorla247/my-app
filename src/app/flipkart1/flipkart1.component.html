@@ -1,0 +1,11 @@
+<h1>Flipkart1</h1>
+<div class="parent" >
+    <div class="child1" *ngFor="let flip of flipkart">
+    <img src="{{flip.image}}"alt="" width="80px" height="70px">
+    <mark id="any">{{flip.rating.rate}}</mark>
+    <h3>{{flip.title}}</h3>
+    <p>{{flip.category}}</p>
+    <h2>Rs.{{flip.price}}</h2>
+    
+    </div>
+</div>

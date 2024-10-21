@@ -1,0 +1,22 @@
+ body{
+     margin: 0;
+ }
+ .parent{
+     width: 100vw;
+     height: 100vh;
+     color: white;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     background-color: indigo;
+     flex-direction: column;
+     text-align: center;
+}
+button{
+    text-align: center;
+    border-radius: 10px;
+    height: 25%;
+    width: 35%;
+
+}
